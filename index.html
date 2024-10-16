@@ -1,0 +1,473 @@
+<!--Página web diseñada por: Laura Isabella Moreno Herrera
+    Fase 2 – Producción de la Aplicación Multimedia
+    Desarrollo del componente práctico del curso
+    Curso: Aplicaciones Multimedia
+    Grupo: 213026_6
+    Programa: Ingeniería Multimedia
+    UNAD
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación Educativa - Historia de Colombia</title>
+    <link rel="shortcut icon" href="img/Logo Colombia Histórica.png" type="img Logo Colombia Histórica">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--Encabezado-->
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="container-logo">
+                    <a href="index.html" class="imagen-logo"> <img src="img/Logo Colombia Histórica.png"
+                            alt="Imagen logo"></a>
+                    <h1 class="logo"><a href="index.html">COLOMBIA HISTÓRICA</a></h1>
+                    <h2>Historia de Colombia para estudiantes de 5° Grado</h2>
+                </div>
+            </div>
+        </div>
+
+        <!--Menú de navegación-->
+        <div class="container-navbar">
+            <div class="logo-menu">Colombia Histórica</div>
+
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu"><img src="Img/Logo Colombia Histórica menu.png" alt="btn-menu"></label>
+
+            <nav class="navbar container">
+
+                <ul class="menu">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./Epoca Precolombina.html">Época Precolombina</a></li>
+                    <li><a href="./La Conquista y la Colonia.html">La Conquista y la Colonia</a></li>
+                    <li><a href="./La Independencia.html">La Independencia</a></li>
+                    <li><a href="./Colombia Moderna.html">Colombia Moderna</a></li>
+                    <li><a href="./Recursos adicionales.html">Recursos</a></li>
+                </ul>
+
+                <!-- Buscador -->
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar...">
+                    <button class="btn-search">
+                        <a href="#"><img src="Img/Busqueda.png" alt="Buscar lupa"></a>
+                    </button>
+                </form>
+                <div class="gif-container">
+                    <img class="colombia-gif" src="gif/Colombia.GIF" alt="Gif Colombia">
+                </div>
+            </nav>
+        </div>
+
+        <div class="wave" style="height: 250px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L0.00,149.60 Z"
+                    style="stroke: none; fill: rgb(68, 143, 255); opacity: 0.5;"></path>
+            </svg>
+
+        </div>
+        <div class="wave" style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 100" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L0.00,149.60 Z"
+                    style="stroke: none; fill: rgb(153, 6, 6); opacity: 0.5;"></path>
+            </svg>
+        </div>
+
+    </header>
+
+
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">Sobre mi Aplicación Educativa</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img class="chica-maestra" img src="img/Chica enseñando.png" alt="Chica enseñando"
+                    class="imagen-about-us">
+                <div class="contenido-textos">
+
+                    <!--Elemento SP top-->
+                    <div id="pageTop">
+                        <a href="#pageTop" aria-label="page-top">
+                            <img id="pageTopImage" src="./img/SP Imagen Top.PNG" alt="Page Top"
+                                style="display: inline;">
+                        </a>
+                    </div>
+
+                    <!--Sección 1: Introducción-->
+                    <section class="textos-header">
+
+                        <h2 class="titulo">Introducción a la Aplicación Educativa</h2>
+                    </section>
+                    <h3><span>1</span>Bienvenidos</h3>
+                    <p>
+                        Bienvenidos a la aplicación educativa interactiva diseñada para enseñar la historia de Colombia
+                        a
+                        estudiantes de quinto grado de primaria. A través de esta plataforma, podrán explorar los
+                        eventos
+                        más
+                        importantes de nuestro país, desde las antiguas civilizaciones precolombinas hasta la Colombia
+                        moderna.
+                    </p>
+
+                    <p>
+                        Esta aplicación busca proporcionar una forma divertida y didáctica de aprender, combinando
+                        textos
+                        claros,
+                        imágenes, y otros recursos multimedia para facilitar la comprensión. Podrás navegar por las
+                        diferentes
+                        secciones, que incluyen la Época Precolombina, La Conquista y La Colonia, La Independencia y la
+                        Colombia
+                        Moderna, así como acceder a recursos adicionales para reforzar tus conocimientos.
+                    </p>
+
+                    <h2 class="titulo">Sobre mí</h2>
+
+                    <h3><span>2</span>Autor@ de la Aplicación</h3>
+                    <p>
+                        Esta aplicación educativa fue desarrollada por Laura Isabella Moreno Herrera, estudiante de
+                        Ingeniería Multimedia de la UNAD y Tecnóloga en Animación Digital del SENA.
+                    </p>
+                    <img class="UNAD" img src="/img/UNAD y SENA.jpg" alt="UNAD y SENA">;
+                    <p>
+                        Mi objetivo en esta Aplicación es crear un medio interactivo y dinámico que ayude a los
+                        estudiantes a aprender de manera entretenida y efectiva la Historia de Colombia.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--Secciones-->
+        <section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Secciones de la Aplicación</h2>
+                <div class="galeria-port">
+
+                    <div class="imagen-port">
+                        <a href="./Epoca Precolombina.html">
+                            <img src="img/Foto-historia-colombia-800.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/pngwing.png" alt="">
+                                <p>Precolombina</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="imagen-port">
+                        <a href="./La Conquista y la Colonia.html">
+                            <img src="img/La conquista y la colonia de Colombia.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/pngwing.png" alt="">
+                                <p>La conquista y la Colonia</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="imagen-port">
+                        <a href="./La Independencia.html">
+                            <img src="img/Independencia-de-Colombia-historia.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/pngwing.png" alt="">
+                                <p>La Independencia</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="imagen-port">
+                        <a href="./Colombia Moderna.html">
+                            <img src="img/La-violencia-bipartidista-en-Colombia.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/pngwing.png" alt="">
+                                <p>Colombia Moderna</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="imagen-port">
+                        <a href="./Recursos adicionales">
+                            <img src="img/Recurso-educativo-digital-ejemplos.png" alt="">
+                            <div class="hover-galeria">
+                                <img src="img/pngwing.png" alt="">
+                                <p>Recursos Adicionales</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="secciones" id="secciones">
+            <div class="contenedor">
+                <!--Sección 2: Precolombina-->
+                <div class="secciones-img">
+                    <div class="precolombina">
+                        <h2 class="titulo-secciones">Época Precolombina</h2>
+                        <img src="img/Época Precolombina.jpg" alt="Época Precolombina">
+                        <p>
+                            Antes de la llegada de los españoles, Colombia estaba habitada por diversas civilizaciones
+                            indígenas.
+                            Las
+                            más destacadas fueron los Muiscas, los Tayronas y los Quimbayas.
+                            Los Muiscas, que habitaban la zona de Cundinamarca y Boyacá, eran conocidos por su
+                            organización
+                            política
+                            y por su habilidad en el trabajo con oro.
+                            Los Tayronas, por su parte, vivían en la Sierra Nevada de Santa Marta y se destacaban por su
+                            avanzada
+                            arquitectura y agricultura. Los Quimbayas eran famosos por sus habilidades en la orfebrería,
+                            produciendo
+                            algunas de las piezas más finas de oro encontradas en América Latina.
+                            Estas civilizaciones dejaron un legado cultural y artístico que sigue siendo valorado en la
+                            actualidad.
+                        </p>
+                        <!-- Sección 3: La Conquista y La Colonia -->
+                        <div class="conquista">
+                            <h2 class="titulo-secciones">La Conquista y La Colonia</h2>
+                            <img src="img/La conquista y la colonia de Colombia.jpg"
+                                alt="La conquista y colonia de Colombia">
+                            <p>
+                                La conquista de Colombia comenzó en el siglo XVI con la llegada de los españoles. En
+                                1538,
+                                Gonzalo
+                                Jiménez de Quesada fundó Santa Fe de Bogotá, que se convirtió en la capital del
+                                Virreinato
+                                de la
+                                Nueva
+                                Granada.
+                                Durante este periodo, los indígenas fueron sometidos al dominio español, y muchas de sus
+                                tierras
+                                fueron
+                                tomadas para la explotación de recursos como el oro. La Colonia se caracterizó por la
+                                imposición
+                                de
+                                la
+                                religión católica y la creación de un sistema de castas que dividía a la población en
+                                diferentes
+                                grupos
+                                según su origen étnico.
+                                Este periodo también fue testigo de rebeliones y resistencias indígenas frente al
+                                dominio
+                                español,
+                                aunque la mayoría de estas revueltas fueron reprimidas.
+                            </p>
+                        </div>
+                        <!-- Sección 4: La Independencia -->
+                        <div class="independencia">
+                            <h2 class="titulo-secciones">La Independencia</h2>
+                            <img src="img/Independencia-de-Colombia-historia.jpg" alt="Independencia de Colombia">
+                            <p>
+                                El proceso de independencia de Colombia comenzó el 20 de julio de 1810 con el famoso
+                                Grito
+                                de
+                                Independencia en Santa Fe de Bogotá. A lo largo de los siguientes años, figuras clave
+                                como
+                                Simón
+                                Bolívar, Francisco de Paula Santander y Policarpa Salavarrieta lideraron las luchas por
+                                la
+                                libertad
+                                del
+                                yugo español.
+                                La Batalla de Boyacá, librada el 7 de agosto de 1819, fue decisiva para la independencia
+                                de
+                                la
+                                Nueva
+                                Granada, la cual más tarde sería renombrada como la República de Colombia.
+                                Tras la independencia, el país experimentó una serie de conflictos internos, pero logró
+                                establecerse
+                                como una nación libre del dominio colonial.
+                            </p>
+                        </div>
+
+                        <!-- Sección 5: Colombia Moderna -->
+                        <div class="moderna">
+                            <h2 class="titulo-secciones">Colombia Moderna</h2>
+                            <img src="img/La-violencia-bipartidista-en-Colombia.jpg" alt="Colombia moderna">
+                            <p>
+                                Desde su independencia, Colombia ha vivido momentos de gran transformación. En el siglo
+                                XX,
+                                el
+                                país
+                                atravesó diversas etapas, desde la violencia bipartidista entre liberales y
+                                conservadores,
+                                hasta
+                                el
+                                surgimiento de movimientos guerrilleros en las décadas de 1960 y 1970.
+                                La Constitución de 1991 fue un punto de inflexión en la historia del país, ya que
+                                introdujo
+                                importantes
+                                reformas políticas y sociales, como el reconocimiento de los derechos humanos, la
+                                protección
+                                de
+                                las
+                                minorías étnicas y la descentralización del poder político.
+                                En la actualidad, Colombia enfrenta desafíos como la desigualdad social y la
+                                implementación
+                                de
+                                acuerdos
+                                de paz, pero sigue siendo un país lleno de diversidad cultural, natural y social.
+                            </p>
+                        </div>
+
+                        <!-- Sección 6: Recursos Adicionales -->
+                        <div class="recursos">
+                            <h2 class="titulo-secciones">Recursos Educativos</h2>
+                            <img src="img/Recurso-educativo-digital-ejemplos.png" alt="Recursos educativos">
+                            <p>
+                                En esta sección encontrarás recursos adicionales como videos, artículos, y actividades
+                                interactivas
+                                para
+                                reforzar tu aprendizaje sobre la historia de Colombia.
+                                Recomendamos explorar estos materiales para obtener una comprensión más profunda de los
+                                temas
+                                tratados
+                                en esta aplicación:
+                            </p>
+                            <ul>
+                                <li>Documentales sobre la historia de Colombia</li>
+                                <li>Infografías interactivas sobre los eventos clave</li>
+                                <li>Actividades didácticas y cuestionarios para repasar lo aprendido</li>
+                                <li>Libros recomendados sobre la independencia y la historia contemporánea</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!--Sección 7: Comentarios de los estudiantes-->
+        <section class="comentarios">
+            <div class="clientes contenedor">
+                <h2 class="titulo-comentarios">Qué dicen nuestros estudiantes</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="img/Estudiante 1.png" alt="">
+                        <div class="contenido-texto-card">
+                            <h4>David, 9 años</h4>
+                            <p>Me encantó aprender sobre los indígenas de Colombia, sobre todo los Muiscas. Las imágenes
+                                y actividades interactivas me ayudaron a entender mejor."</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/Estudiante 2.png" alt="">
+                        <div class="contenido-texto-card">
+                            <h4>María, 10 años</h4>
+                            <p>La aplicación es muy fácil de usar y me gustó que tiene muchos recursos para aprender. La
+                                parte de Colombia moderna fue muy interesante."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Sección 8: Próximos temas-->
+        <section class="about-services">
+            <div class="contenedor">
+                <div class="actualizaciones">
+                    <h2 class="titulo-servicios">Próximos temas</h2>
+                    <img src="gif/Carga gif.gif" alt="Próximas actualizaciones">
+                    <p>En la próxima actualización de esta aplicación educativa, podrás aprender sobre los siguientes
+                        temas
+                        relacionados con la historia de Colombia:
+                    </p>
+                </div>
+                <section class="proximos-recursos">
+                    <h2>Próximos Recursos Disponibles</h2>
+                    <div class="recursos-container">
+                        <div class="recurso">
+                            <img src="img/Colombia_ciudad.jpeg" alt="Recurso 1 - Juego Interactivo">
+                            <a href="./Recursos adicionales.html">
+                                <h3>Juego Interactivo: La Independencia</h3>
+                            </a>
+                            <p>¡Pronto podrás explorar la historia de la Independencia a través de un divertido juego
+                                interactivo!</p>
+                        </div>
+                        <div class="recurso">
+                            <img src="img/Colombia_ciudad.jpeg" alt="Recurso 2 - Video Educativo">
+                            <a href="./Recursos adicionales.html">
+                                <h3>Video Educativo: Los Próceres</h3>
+                            </a>
+                            <p>Conoce a los héroes de la Independencia en un emocionante video animado.</p>
+                        </div>
+                        <div class="recurso">
+                            <img src="img/Colombia_ciudad.jpeg" alt="Recurso 3 - Línea de Tiempo Interactiva">
+                            <a href="./Recursos adicionales.html">
+                                <h3>Línea de Tiempo: Colombia a Través de los Años</h3>
+                            </a>
+                            <p>Explora los eventos más importantes de la historia de Colombia con una línea de tiempo
+                                interactiva.</p>
+                        </div>
+                        <div class="recurso">
+                            <img src="img/Colombia_ciudad.jpeg" alt="Recurso 4 - Actividades Imprimibles">
+                            <a href="./Recursos adicionales.html">
+                                <h3>Actividades Imprimibles</h3>
+                            </a>
+                            <p>Descarga y diviértete con actividades educativas sobre la historia de Colombia.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Información de Contacto</p>
+                    <ul>
+                        <li>
+                            Dirección: Av Ciudad de Quito #11 Sur-2 a 11 Sur-48, Bogotá
+                        </li>
+                        <li>Teléfono: 123-456-7890</li>
+                        <li>Fax: 12345678910</li>
+                        <li>EmaiL: limorenoh@unadvirtual.edu.co</li>
+                    </ul>
+
+                    <!--REDES SOCIALES-->
+                    <div class="social-icons">
+                        <span class="facebook">
+                            <a href="https://www.facebook.com/"><img src="./Img/Facebook.png"></a>
+                        </span>
+                        <span class="twitter">
+                            <a href="https://twitter.com/home"><img src="./Img/Twitter.png"></a>
+                        </span>
+                        <span class="pinterest">
+                            <a href="https://co.pinterest.com/"><img src="./Img/Pinterest.png"></a>
+                        </span>
+                        <span class="youtube">
+                            <a href="https://www.youtube.com/"><img src="./Img/Youtube.png"></a>
+                        </span>
+                        <span class="instagram">
+                            <a href="https://www.instagram.com/"><img src="./Img/instagram.png"></a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="information">
+                    <p class="title-footer">Información</p>
+                    <ul>
+                        <li><a href="#">Acerca de Nosotros</a></li>
+                        <li><a href="#">Información Delivery</a></li>
+                        <li><a href="#">Politicas de Privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Contactános</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>
+                    <a href="#"><img src="./Img/Mi avatar Isabella.png"></a>
+                    Diseñado por: Laura Isabella Moreno Herrera &copy; 2024
+                </p>
+                <p>
+                    <a href="#"></a><img src="img/Logo Colombia Histórica.png"></a>
+                    Historia de Colombia para 5° Grado. Todos los derechos reservados &copy;
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
