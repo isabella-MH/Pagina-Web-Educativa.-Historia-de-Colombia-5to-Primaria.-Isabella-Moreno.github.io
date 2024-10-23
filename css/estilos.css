@@ -15,7 +15,7 @@ body {
 }
 
 html {
-    font-size: 75%;
+    font-size: 80%;
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
     overflow-x: hidden;
@@ -23,6 +23,7 @@ html {
 
 :root {
     --dark-color: #151515;
+    --primary-color: #8b8b9b89;
 }
 
 
@@ -37,9 +38,9 @@ html {
 #pageTopImage {
     position: fixed;
     bottom: 90px;
-    right: 2px;
+    right: 50px;
     z-index: 10;
-    width: 150px;
+    width: 60px;
     display: none;
 }
 
@@ -48,12 +49,13 @@ element .style {
 }
 
 .contenedor {
-    padding: 30px 0;
+    padding: 15px 15px;
     width: 90%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
 }
+
 
 .precolombina p {
     font-size: 1.5rem;
@@ -90,7 +92,7 @@ element .style {
 }
 
 
-.secciones-img img{
+.secciones-img img {
     width: 100%;
     height: 100px;
     border: 1.5rem;
@@ -102,7 +104,7 @@ element .style {
 
 .UNAD {
     width: 100%;
-    height: 100px;
+    height: 150px;
     align-items: center;
     justify-content: center;
     object-fit: contain;
@@ -120,12 +122,12 @@ element .style {
     color: #a48f00;
     font-size: 30px;
     text-align: center;
-    margin-bottom: 30px;
+    margin: 15px;
 }
 
 .textos-header .titulo {
     color: #000;
-    font-size: 20px;
+    font-size: 25px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -157,7 +159,7 @@ element .style {
 
 header {
     width: 100%;
-    height: 400px;
+    height: 350px;
     background: #6ef0f7;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, hsla(59, 100%, 61%, 0.682), hsla(59, 100%, 61%, 0.682)), url(../img/Independencia-de-Colombia-historia.jpg);
@@ -193,6 +195,8 @@ nav {
     padding: 0 2rem;
 }
 
+
+
 .container-logo {
     display: flex;
     gap: 1rem;
@@ -218,19 +222,13 @@ nav {
     transition: 0.3s ease;
 }
 
+
 .imagen-logo img:hover {
     transform: scale(1.1);
 }
 
-.container-navbar {
-    background-color: var(--primary-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-    position: relative;
-    z-index: 999;
-}
+/*MENU*/
+
 
 .btn {
     display: inline-block;
@@ -241,21 +239,34 @@ nav {
     padding: 1rem 2.5rem;
     cursor: pointer;
     font-size: 1.5rem;
+    width: 100px;
+}
+
+.btn-menu-col {
+    max-width: 80px;
 }
 
 #btn-menu,
 .container-navbar label {
     display: none;
+
 }
 
-.btn-menu img {
-    width: 30px;
+
+.container-navbar {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2.3rem 2rem;
+    position: relative;
+    z-index: 999;
 }
 
 .container-navbar label {
     display: none;
-    padding: 10px;
-    border-right: 1px solid #fff;
+    padding: 0px;
+    border-right: px solid #fff;
 }
 
 .container-navbar label:hover {
@@ -263,12 +274,16 @@ nav {
     background: rgb(0, 0, 0, 0.3);
 }
 
+.navbar .search-buscar {
+    padding: 10px;
+}
+
 .navbar ul {
     list-style: none;
     text-align: center;
     align-items: center;
     margin: 0;
-    padding: 0;
+    padding: 12px;
 }
 
 .navbar ul li {
@@ -280,13 +295,13 @@ nav {
 
 .navbar ul li a {
     display: block;
-
+    gap: 5px;
     font-size: 20px;
     font-weight: bold;
     color: #000;
     text-decoration: none;
     border-radius: 5px;
-    padding: 12px 20px;
+    padding: 10px 20px;
     transition: all 0.2 linear;
 }
 
@@ -294,9 +309,38 @@ nav {
     background-color: lightgoldenrodyellow;
 }
 
-/*MENU*/
+.submenu {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
 
+}
 
+.navbar li:hover .submenu {
+    display: block
+}
+
+.navbar ul li:hover .hijos {
+    display: block;
+}
+
+.navbar .submenu .hijos {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(84, 136, 156, 0.453)
+}
+
+.navbar .submenu .hijos li {
+    display: block;
+    overflow: hidden;
+    border-bottom: none;
+}
+
+.navbar .submenu .hijos li a {
+    display: block;
+}
 
 .search-form {
     position: relative;
@@ -307,11 +351,10 @@ nav {
     background-color: #fff;
     height: 4.4rem;
     overflow: hidden;
-    margin-top: 4rem;
-
     margin: 0 auto;
+    margin-top: 1rem;
     /* Centra el buscador */
-    width: 80%;
+    width: 75%;
     /* Ajusta el ancho del buscador */
 }
 
@@ -361,6 +404,7 @@ main .sobre-nosotros {
 .contenedor-sobre-nosotros {
     display: flex;
     justify-content: space-evenly;
+    gap: 2rem;
 }
 
 .imagen-about-us {
@@ -370,14 +414,16 @@ main .sobre-nosotros {
 .contenido-textos p {
     font-size: 1.5rem;
     color: #000000;
-    padding: 0.25rem 0;
+    padding: 1rem 0;
     padding-top: 1rem;
     line-height: 1.5;
     text-align: justify;
+    font-weight: 400;
+
 }
 
 .contenido-textos h3 {
-    font-size: 2rem;
+    font-size: 20px;
 
 }
 
@@ -402,16 +448,12 @@ main .sobre-nosotros {
     text-align: center;
     width: 40px;
     height: 40px;
-    padding: 2px;
+    padding: 5px;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-    margin-right: 5px;
+    margin-right: 12px;
 }
 
-.contenido-textos p {
-    padding: 0px 0px 30px 15px;
-    font-weight: 300;
-    text-align: justify;
-}
+
 
 /* Galeria */
 
@@ -558,9 +600,8 @@ main .sobre-nosotros {
     /* Ajusta la distancia desde la derecha */
     width: 200px;
     /* Tamaño del GIF */
-    height: auto;
-    /* Mantener la proporción */
-    z-index: 1000;
+    height: 100px;
+    z-index: 100;
     transition: opacity 2s ease;
     /* Transición de opacidad */
 
@@ -571,7 +612,7 @@ main .sobre-nosotros {
     /* Para que el GIF se mueva dentro de este contenedor */
     width: 100%;
     /* Ajusta según tus necesidades */
-    height: 200px;
+    height: 100px;
     /* Ajusta según tus necesidades */
     overflow: hidden;
     /* Oculta cualquier parte del GIF que se salga del contenedor */
@@ -617,7 +658,7 @@ main .sobre-nosotros {
         /* Comienza en la esquina izquierda */
         opacity: 0;
         /* Completamente desvanecido */
-        transform: rotate(180deg);
+        transform: revert;
         /* Gira 180 grados */
     }
 
@@ -626,7 +667,7 @@ main .sobre-nosotros {
         /* Se mueve hacia el centro */
         opacity: 1;
         /* Se vuelve visible */
-        transform: rotate(180deg);
+        transform: scaleX(-1);
         /* Mantiene la rotación */
     }
 
@@ -635,12 +676,12 @@ main .sobre-nosotros {
         /* Llega a la esquina derecha */
         opacity: 1;
         /* Se mantiene visible */
-        transform: rotate(0deg);
+        transform: scaleX(-1);
         /* Rota de regreso a su posición original */
     }
+    
 }
 
-/* Enlazando ambas animaciones */
 .colombia-gif {
     animation: mover 6s linear forwards, mover-reversa 6s linear forwards;
     /* Alterna entre ambas animaciones */
@@ -648,6 +689,7 @@ main .sobre-nosotros {
     /* Establece un retraso para que la segunda animación comience después de la primera */
     animation-fill-mode: forwards;
     /* Mantiene el estado final de las animaciones */
+    
 }
 
 .servicio-ind {
@@ -896,17 +938,16 @@ footer {
 .footer .menu-footer {
     display: flex;
     align-items: center;
-    gap: 6rem;
-    flex-wrap: wrap;
+    gap: 8rem;
     padding: 2rem 0;
-    padding-bottom: 3rem;
+    margin: 0 auto;
 }
 
 .menu-footer {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3, 1fr) 30rem;
     gap: 3rem;
-    justify-items: left;
+    justify-items: center;
     margin: 0 auto;
 
 }
@@ -940,15 +981,15 @@ footer {
 .my-account ul li {
     list-style: none;
     color: #000;
-    font-size: 1.4rem;
-    font-weight: 300;
+    font-size: 1.5rem;
+    font-weight: 350;
 }
 
 .information ul li a,
 .my-account ul li a {
     text-decoration: none;
     color: #000;
-    font-weight: 300;
+    font-weight: 350;
 }
 
 .information ul li a:hover,
@@ -1030,9 +1071,12 @@ footer {
 }
 
 .copyright {
+    background-color: var(--background-color);
     display: flex;
-    justify-content: space-between;
-    padding-top: 2rem;
+    gap: 2rem;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 0;
     border-top: 1px solid #fff;
 }
 
@@ -1049,7 +1093,16 @@ footer {
 
 /*----------------------*/
 
+@media (max-width:1288px) {
+    .container-navbar {
+        padding: 4.5px 0;
+        position: relative;
+    }
 
+    #pageTop {
+        width: 50px;
+    }
+}
 
 @media (max-width:1024px) {
     html {
@@ -1071,6 +1124,7 @@ footer {
         /* Hacer visible el icono del menú en tamaños más pequeños */
         cursor: pointer;
         /* Agregar el cursor para indicar que es interactivo */
+
     }
 
     .logo-menu {
@@ -1110,6 +1164,16 @@ footer {
         /* Mostrar el menú cuando se activa el botón */
     }
 
+    #pageTopImage {
+        width: 45px;
+        /* Tamaño ajustado */
+        max-width: 100px;
+        /* Tamaño flexible */
+        /* Ajusta la posición */
+        right: 50px;
+        /* Asegura que inicie desde la derecha */
+    }
+
     .navbar ul li a {
         color: #fff;
     }
@@ -1123,14 +1187,18 @@ footer {
         width: 90%;
     }
 
+    .navbar .submenu .hijos {
+        position: static;
+        width: auto; 
+        display: none; 
+        background-color: rgb(84, 136, 156); 
+    }
+}
+
     .imagen-about-us {
         width: 100%;
     }
 
-    .container-navbar {
-        padding: 20px 10%;
-        position: relative;
-    }
 
     /* Galeria */
 
@@ -1174,7 +1242,7 @@ footer {
     .servicio-ind img {
         width: 90%;
     }
-}
+
 
 @media (max-width:768px) {
     html {
@@ -1202,13 +1270,22 @@ footer {
     }
 
     .colombia-gif {
-        width: 150px;
+        width: 350px;
         /* Tamaño ajustado */
-        max-width: 30%;
+        max-width: 200px;
         /* Tamaño flexible */
-        top: 10px;
         /* Ajusta la posición */
         right: 0;
+        /* Asegura que inicie desde la derecha */
+    }
+
+    #pageTopImage {
+        width: 40px;
+        /* Tamaño ajustado */
+        max-width: 100px;
+        /* Tamaño flexible */
+        /* Ajusta la posición */
+        right: 50px;
         /* Asegura que inicie desde la derecha */
     }
 
@@ -1216,6 +1293,9 @@ footer {
         display: block;
     }
 
+    .contenido-textos p {
+        font-size: 1.8rem;
+    }
     .navbar {
         position: absolute;
         background: #4E94AB;
@@ -1223,10 +1303,11 @@ footer {
 
     .navbar ul {
         flex-direction: column;
+        padding: 12px;
     }
 
-    .chica-maestra img {
-        height: 200px;
+    .chica-maestra {
+        height: 400px;
     }
 
     #btn-menu:checked~.menu {
@@ -1294,17 +1375,21 @@ footer {
     .titulo-final {
         font-size: 20px;
     }
+}
 
-    /* Estilo para pantallas más pequeñas */
-    @media (max-width: 768px) {
-        .recursos-container {
-            flex-direction: column;
-            align-items: center;
-        }
+/* Estilo para pantallas más pequeñas */
+@media (max-width: 461px) {
+    .recursos-container {
+        flex-direction: column;
+        align-items: center;
+    }
 
-        .recurso {
-            width: 90%;
-            margin-bottom: 20px;
-        }
+    .recurso {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .chica-maestra {
+        height: 300px;
     }
 }
